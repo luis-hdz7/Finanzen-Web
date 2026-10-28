@@ -1,75 +1,525 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plantillas Excel - Finanzen</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Descarga la plantilla oficial de Excel de Finanzen y aprende a preparar tus datos financieros para importarlos correctamente."
+    >
+
+    <title>Plantilla Excel | Finanzen</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/excel-template.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="excelTemplate.html" class="active">Plantillas Excel</a></li>
-      <li><a href="aboutUs.html">Acerca de</a></li>
-    </ul>
-  </nav>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Finanzen</a>
 
-  <main class="container">
-    <h1>Plantilla de Excel</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="excelTemplate.html" class="active">
+                    Plantillas Excel
+                </a>
+            </li>
+            <li><a href="aboutUs.html">Acerca de</a></li>
+        </ul>
+    </nav>
 
-    <p>
-      Para importar información financiera correctamente en <strong>Finanzen</strong>,
-      debes utilizar la plantilla oficial proporcionada por la aplicación.
-      Esta plantilla define la estructura que deben seguir los datos antes de
-      ser importados.
-    </p>
+    <main class="excel-page">
 
-    <section>
-      <h2>¿Para qué sirve la plantilla?</h2>
-      <p>
-        La plantilla permite organizar la información financiera de tu negocio
-        de una forma compatible con Finanzen. Su uso ayuda a evitar errores
-        durante el proceso de importación y facilita la validación de los datos.
-      </p>
-    </section>
+        <!-- Presentación y descarga -->
+        <section class="excel-hero">
+            <div class="excel-hero-content">
+                <span class="eyebrow">
+                    GUÍA DE IMPORTACIÓN
+                </span>
 
-    <section>
-      <h2>¿Qué información contiene?</h2>
-      <p>
-        El archivo está preparado para registrar la información necesaria para
-        el análisis financiero del negocio, incluyendo datos relacionados con
-        ventas y movimientos financieros.
-      </p>
-    </section>
+                <h1>
+                    Prepara tus datos.
+                    <span>Comprende tu negocio.</span>
+                </h1>
 
-    <section>
-      <h2>Recomendaciones antes de importar</h2>
-      <p>
-        No cambies los nombres de las hojas, columnas o la estructura establecida
-        en la plantilla. También debes asegurarte de que las fechas, cantidades
-        y demás valores tengan un formato válido.
-      </p>
-      <p>
-        Finanzen verificará el archivo antes de almacenarlo. Si la estructura
-        esperada no coincide o existen datos inválidos, el archivo no será
-        importado.
-      </p>
-    </section>
+                <p>
+                    Organiza las ventas y los movimientos financieros de tu
+                    negocio con la plantilla oficial de Finanzen. Te guiamos
+                    paso a paso para que puedas importar tu información
+                    de forma sencilla y reducir errores.
+                </p>
 
-    <section>
-      <h2>Descargar plantilla</h2>
-      <p>
-        Descarga la plantilla oficial y utilízala para preparar los datos que
-        posteriormente serán cargados en Finanzen.
-      </p>
+                <div class="hero-actions">
+                    <a
+                        href="images/plantilla_finanzen.xlsx"
+                        download
+                        class="btn-download"
+                    >
+                        <span aria-hidden="true">↓</span>
+                        Descargar plantilla (.xlsx)
+                    </a>
 
-      <a href="images/plantilla_finanzen.xlsx" download class="btn-download">
-        <span></span> Descargar Plantilla (.xlsx)
-      </a>
-    </section>
-  </main>
+                    <a href="#como-funciona" class="btn-secondary">
+                        Conocer el proceso
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span aria-hidden="true">✓</span>
+                    Archivo oficial · Formato Excel (.xlsx)
+                </div>
+            </div>
+
+            <div class="excel-hero-visual" aria-label="Vista ilustrativa de una plantilla de Excel">
+                <div class="excel-file-card">
+                    <div class="excel-file-top">
+                        <div class="excel-file-icon">X</div>
+
+                        <div>
+                            <strong>plantilla_finanzen.xlsx</strong>
+                            <span>Plantilla de importación</span>
+                        </div>
+                    </div>
+
+                    <div class="excel-sheet-tabs">
+                        <span class="sheet-tab selected">Ventas</span>
+                        <span class="sheet-tab">Movimientos</span>
+                    </div>
+
+                    <div class="excel-preview">
+                        <div class="excel-preview-row excel-preview-header">
+                            <span>Fecha</span>
+                            <span>Producto</span>
+                            <span>Total</span>
+                        </div>
+
+                        <div class="excel-preview-row">
+                            <span>01/10/2026</span>
+                            <span>Producto A</span>
+                            <span>150.00</span>
+                        </div>
+
+                        <div class="excel-preview-row">
+                            <span>02/10/2026</span>
+                            <span>Producto B</span>
+                            <span>280.00</span>
+                        </div>
+
+                        <div class="excel-preview-row">
+                            <span>03/10/2026</span>
+                            <span>Producto C</span>
+                            <span>95.00</span>
+                        </div>
+                    </div>
+
+                    <div class="excel-file-footer">
+                        <span class="status-dot"></span>
+                        <span>Estructura de ejemplo</span>
+                    </div>
+                </div>
+
+                <div class="excel-floating-note">
+                    <span class="floating-check">✓</span>
+                    <div>
+                        <strong>Datos organizados</strong>
+                        <span>Listos para revisar</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resumen del proceso -->
+        <section class="process-overview" id="como-funciona">
+            <div class="section-heading">
+                <span class="eyebrow">EL PROCESO</span>
+                <h2>De tu archivo a la información financiera</h2>
+                <p>
+                    No necesitas conocimientos técnicos. Solo organiza
+                    tus datos y sigue estos pasos.
+                </p>
+            </div>
+
+            <div class="process-grid">
+                <article class="process-card">
+                    <span class="step-number">01</span>
+                    <div class="process-icon">
+                        <span aria-hidden="true">↓</span>
+                    </div>
+                    <h3>Descarga</h3>
+                    <p>
+                        Obtén la plantilla oficial para trabajar con
+                        la estructura que utiliza Finanzen.
+                    </p>
+                </article>
+
+                <article class="process-card">
+                    <span class="step-number">02</span>
+                    <div class="process-icon">
+                        <span aria-hidden="true">✎</span>
+                    </div>
+                    <h3>Completa</h3>
+                    <p>
+                        Introduce tus ventas o movimientos financieros
+                        respetando los nombres de las columnas.
+                    </p>
+                </article>
+
+                <article class="process-card">
+                    <span class="step-number">03</span>
+                    <div class="process-icon">
+                        <span aria-hidden="true">✓</span>
+                    </div>
+                    <h3>Revisa e importa</h3>
+                    <p>
+                        Comprueba la información. Finanzen validará
+                        el archivo y te ayudará a identificar problemas.
+                    </p>
+                </article>
+
+                <article class="process-card">
+                    <span class="step-number">04</span>
+                    <div class="process-icon">
+                        <span aria-hidden="true">↗</span>
+                    </div>
+                    <h3>Consulta</h3>
+                    <p>
+                        Una vez importados los datos, podrás utilizarlos
+                        en las funciones de consulta y análisis disponibles.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Estructura del archivo -->
+        <section class="excel-structure">
+            <div class="section-heading">
+                <span class="eyebrow">CONOCE LA PLANTILLA</span>
+                <h2>Dos hojas para organizar tu información</h2>
+                <p>
+                    Cada hoja tiene una finalidad diferente. Utiliza
+                    la que corresponda a los datos que deseas registrar.
+                </p>
+            </div>
+
+            <div class="sheet-grid">
+
+                <!-- Hoja de ventas -->
+                <article class="sheet-card">
+                    <div class="sheet-card-heading">
+                        <div class="sheet-icon sales-icon">V</div>
+                        <div>
+                            <span class="sheet-label">HOJA 01</span>
+                            <h3>Ventas</h3>
+                        </div>
+                    </div>
+
+                    <p>
+                        Registra los productos o servicios vendidos
+                        y los importes correspondientes.
+                    </p>
+
+                    <div class="columns-preview">
+                        <div class="columns-title">
+                            Columnas requeridas
+                        </div>
+
+                        <ul>
+                            <li>Fecha</li>
+                            <li>Producto/Servicio</li>
+                            <li>Categoría</li>
+                            <li>Cantidad</li>
+                            <li>Precio Unitario</li>
+                            <li>Total</li>
+                        </ul>
+                    </div>
+
+                    <div class="sheet-example">
+                        <strong>Ejemplo de registro</strong>
+                        <p>
+                            Producto: Arroz<br>
+                            Cantidad: 5<br>
+                            Precio unitario: 30.00<br>
+                            Total: 150.00
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Hoja de movimientos -->
+                <article class="sheet-card">
+                    <div class="sheet-card-heading">
+                        <div class="sheet-icon movements-icon">M</div>
+                        <div>
+                            <span class="sheet-label">HOJA 02</span>
+                            <h3>Movimientos</h3>
+                        </div>
+                    </div>
+
+                    <p>
+                        Registra los ingresos y gastos del negocio,
+                        junto con una descripción y su método de pago.
+                    </p>
+
+                    <div class="columns-preview">
+                        <div class="columns-title">
+                            Columnas requeridas
+                        </div>
+
+                        <ul>
+                            <li>Fecha</li>
+                            <li>Tipo</li>
+                            <li>Categoría</li>
+                            <li>Descripción</li>
+                            <li>Monto</li>
+                            <li>Método de Pago</li>
+                        </ul>
+                    </div>
+
+                    <div class="sheet-example">
+                        <strong>Ejemplo de registro</strong>
+                        <p>
+                            Tipo: Gasto<br>
+                            Categoría: Servicios básicos<br>
+                            Descripción: Pago de electricidad<br>
+                            Monto: 800.00
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="info-banner">
+                <span class="info-banner-icon" aria-hidden="true">i</span>
+                <p>
+                    <strong>¿Solo necesitas importar una hoja?</strong>
+                    No hay problema. Puedes importar un archivo que contenga
+                    únicamente <strong>Ventas</strong> o únicamente
+                    <strong>Movimientos</strong>. No necesitas completar
+                    ambas para realizar una importación.
+                </p>
+            </div>
+        </section>
+
+        <!-- Recomendaciones -->
+        <section class="excel-checklist">
+            <div class="section-heading">
+                <span class="eyebrow">ANTES DE IMPORTAR</span>
+                <h2>Una revisión rápida puede evitar errores</h2>
+                <p>
+                    Comprueba estos puntos antes de seleccionar tu archivo
+                    en Finanzen.
+                </p>
+            </div>
+
+            <div class="checklist-layout">
+                <div class="checklist-items">
+                    <article class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <h3>Conserva los nombres originales</h3>
+                            <p>
+                                No cambies los nombres de las hojas ni
+                                los encabezados de las columnas.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <h3>Revisa fechas y cantidades</h3>
+                            <p>
+                                Utiliza fechas válidas y comprueba que
+                                las cantidades, los precios y los montos
+                                sean datos numéricos cuando corresponda.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <h3>Comprueba los tipos de movimiento</h3>
+                            <p>
+                                En la hoja Movimientos, utiliza los valores
+                                <strong>Ingreso</strong> o
+                                <strong>Gasto</strong> en la columna Tipo.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <h3>Utiliza las categorías de tu negocio</h3>
+                            <p>
+                                Comprueba que las categorías correspondan
+                                a las disponibles en Finanzen para tu negocio.
+                                Si falta alguna, podrás revisar las opciones
+                                que muestre la aplicación.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <h3>Guarda el archivo en formato .xlsx</h3>
+                            <p>
+                                Conserva el formato de Excel y verifica
+                                que el archivo se haya guardado correctamente.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="checklist-side">
+                    <div class="checklist-side-icon">
+                        <span aria-hidden="true">!</span>
+                    </div>
+
+                    <h3>¿Qué debes evitar?</h3>
+
+                    <ul>
+                        <li>Eliminar columnas obligatorias.</li>
+                        <li>Escribir nombres de hojas diferentes.</li>
+                        <li>Dejar datos incompletos o inválidos.</li>
+                        <li>Modificar la estructura de la plantilla.</li>
+                    </ul>
+
+                    <p>
+                        Trabajar sobre una copia de la plantilla original
+                        te ayudará a conservar su estructura.
+                    </p>
+
+                    <a
+                        href="images/plantilla_finanzen.xlsx"
+                        download
+                        class="btn-download btn-download-small"
+                    >
+                        Descargar plantilla
+                    </a>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Qué sucede durante la importación -->
+        <section class="validation-section">
+            <div class="validation-content">
+                <span class="eyebrow">VALIDACIÓN DE DATOS</span>
+
+                <h2>Finanzen revisa tu archivo antes de guardarlo</h2>
+
+                <p>
+                    Durante la importación, la aplicación comprueba
+                    que la estructura y los datos cumplan los requisitos
+                    necesarios. Esto ayuda a detectar problemas antes de
+                    utilizar la información en las consultas y los informes.
+                </p>
+
+                <div class="validation-points">
+                    <div class="validation-point">
+                        <span>01</span>
+                        <div>
+                            <strong>Revisión de la estructura</strong>
+                            <p>
+                                Comprueba las hojas y las columnas requeridas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="validation-point">
+                        <span>02</span>
+                        <div>
+                            <strong>Comprobación de los datos</strong>
+                            <p>
+                                Identifica valores que no cumplen
+                                las condiciones esperadas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="validation-point">
+                        <span>03</span>
+                        <div>
+                            <strong>Información sobre los problemas</strong>
+                            <p>
+                                Si se detectan errores, consulta los mensajes
+                                de Finanzen, corrige el archivo e inténtalo
+                                nuevamente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="validation-visual">
+                <div class="validation-window">
+                    <div class="validation-window-header">
+                        <span class="window-dot"></span>
+                        <span class="window-dot"></span>
+                        <span class="window-dot"></span>
+                        <span>Importación de Excel</span>
+                    </div>
+
+                    <div class="validation-window-body">
+                        <div class="validation-status-icon">✓</div>
+                        <h3>Revisión de datos</h3>
+                        <p>
+                            Finanzen comprueba la estructura
+                            y la información del archivo.
+                        </p>
+
+                        <div class="validation-example-row">
+                            <span class="example-status">✓</span>
+                            <span>Columnas requeridas</span>
+                            <strong>Revisadas</strong>
+                        </div>
+
+                        <div class="validation-example-row">
+                            <span class="example-status">✓</span>
+                            <span>Tipos de datos</span>
+                            <strong>Revisados</strong>
+                        </div>
+
+                        <p class="illustration-disclaimer">
+                            Ilustración del proceso; no representa
+                            un resultado real de importación.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cierre -->
+        <section class="excel-final-cta">
+            <span class="eyebrow">COMIENZA AQUÍ</span>
+            <h2>Tu información es el primer paso para comprender tu negocio.</h2>
+            <p>
+                Descarga la plantilla, organiza tus datos y prepáralos
+                para trabajar con Finanzen.
+            </p>
+
+            <a
+                href="images/plantilla_finanzen.xlsx"
+                download
+                class="btn-download"
+            >
+                <span aria-hidden="true">↓</span>
+                Descargar plantilla Excel
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="excel-footer">
+        <a href="index.html" class="logo">Finanzen</a>
+        <p>
+            Organiza tu información financiera y toma decisiones
+            con mayor claridad.
+        </p>
+    </footer>
 
 </body>
 </html>
