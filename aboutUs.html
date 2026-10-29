@@ -1,70 +1,306 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acerca de - Finanzen</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Conoce Finanzen, una aplicación de escritorio para organizar, analizar y visualizar información financiera de pequeños negocios."
+    >
+
+    <title>Acerca de Finanzen | Nuestro proyecto</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about-us.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="excelTemplate.html">Plantillas Excel</a></li>
-      <li><a href="aboutUs.html" class="active">Acerca de</a></li>
-    </ul>
-  </nav>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Finanzen</a>
 
-  <main class="container">
-    <h1>Acerca de Finanzen</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="excelTemplate.html">Plantillas Excel</a>
+            </li>
+            <li>
+                <a href="aboutUs.html" class="active" aria-current="page">
+                    Acerca de
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-    <p>
-      <strong>Finanzen</strong> es una aplicación de escritorio orientada a
-      pequeñas y medianas empresas que necesitan organizar y analizar su
-      información financiera de una manera sencilla.
-    </p>
+    <main class="container about-page">
 
-    <section>
-      <h2>Propósito del proyecto</h2>
-      <p>
-        El objetivo de Finanzen es facilitar el análisis de información
-        financiera mediante la importación de datos desde archivos Excel,
-        permitiendo posteriormente consultar la información mediante tablas,
-        filtros, gráficos e informes.
-      </p>
-    </section>
+        <!-- Presentación -->
+        <header class="about-hero">
+            <span class="eyebrow">ACERCA DEL PROYECTO</span>
 
-    <section>
-      <h2>¿Qué permite hacer Finanzen?</h2>
-      <p>
-        La aplicación permite gestionar la información de diferentes negocios,
-        importar datos financieros, consultar ventas y movimientos, visualizar
-        indicadores mediante gráficos y generar información que ayude a
-        comprender el comportamiento financiero del negocio.
-      </p>
-    </section>
+            <h1>
+                Finanzas más claras.
+                <span>Decisiones mejor informadas.</span>
+            </h1>
 
-    <section>
-      <h2>Enfoque de Finanzen</h2>
-      <p>
-        Finanzen está enfocada en el análisis y visualización de información
-        financiera. No busca sustituir un sistema contable especializado ni
-        realizar procesos fiscales, sino proporcionar herramientas que ayuden
-        a los propietarios y colaboradores de pequeños negocios a comprender
-        mejor sus datos.
-      </p>
-    </section>
+            <p>
+                <strong>Finanzen</strong> es una aplicación de escritorio
+                diseñada para ayudar a pequeños negocios a organizar,
+                analizar y visualizar su información financiera de una
+                manera sencilla y comprensible.
+            </p>
 
-    <section>
-      <h2>Privacidad y almacenamiento</h2>
-      <p>
-        Finanzen está diseñada como una aplicación de escritorio, por lo que
-        la información del negocio es gestionada desde el entorno local de la
-        aplicación y su base de datos.
-      </p>
-    </section>
-  </main>
+            <a href="index.html" class="about-primary-link">
+                Conoce cómo funciona
+                <span aria-hidden="true">→</span>
+            </a>
+
+            <div class="about-hero-visual" aria-hidden="true">
+                <div class="about-visual-card visual-card-main">
+                    <div class="visual-card-heading">
+                        <span class="visual-dot"></span>
+                        <span>Resumen financiero</span>
+                    </div>
+
+                    <div class="visual-chart">
+                        <div class="chart-bar bar-one"></div>
+                        <div class="chart-bar bar-two"></div>
+                        <div class="chart-bar bar-three"></div>
+                        <div class="chart-bar bar-four"></div>
+                        <div class="chart-bar bar-five"></div>
+                        <div class="chart-bar bar-six"></div>
+                        <div class="chart-bar bar-seven"></div>
+                    </div>
+
+                    <div class="visual-chart-labels">
+                        <span>Datos</span>
+                        <span>Indicadores</span>
+                        <span>Análisis</span>
+                    </div>
+                </div>
+
+                <div class="about-visual-card visual-card-side">
+                    <span class="visual-side-icon">✓</span>
+                    <div>
+                        <strong>Información organizada</strong>
+                        <span>Datos para comprender tu negocio</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Propósito -->
+        <section class="about-purpose">
+            <div class="about-section-intro">
+                <span class="eyebrow">NUESTRO PROPÓSITO</span>
+
+                <h2>Convertir datos en información útil</h2>
+            </div>
+
+            <div class="about-purpose-content">
+                <p>
+                    Los pequeños negocios generan información sobre sus
+                    ventas, ingresos y gastos, pero organizarla y comprender
+                    su comportamiento puede resultar complicado.
+                </p>
+
+                <p>
+                    Finanzen busca facilitar ese proceso mediante herramientas
+                    que permitan reunir los datos financieros, consultarlos
+                    de manera organizada y representarlos visualmente para
+                    reconocer patrones y comprender mejor la actividad
+                    del negocio.
+                </p>
+            </div>
+        </section>
+
+        <!-- Funcionalidades -->
+        <section class="about-features">
+            <div class="about-section-heading">
+                <span class="eyebrow">¿QUÉ OFRECE FINANZEN?</span>
+
+                <h2>Herramientas para comprender tu negocio</h2>
+
+                <p>
+                    Funcionalidades pensadas para facilitar el trabajo con
+                    la información financiera de cada negocio.
+                </p>
+            </div>
+
+            <div class="about-feature-grid">
+
+                <article class="about-feature-card">
+                    <div class="feature-icon feature-purple">01</div>
+
+                    <h3>Importación de datos</h3>
+
+                    <p>
+                        Incorpora información financiera mediante plantillas
+                        de Excel y utiliza las validaciones de la aplicación
+                        para detectar problemas en los archivos.
+                    </p>
+                </article>
+
+                <article class="about-feature-card">
+                    <div class="feature-icon feature-green">02</div>
+
+                    <h3>Consultas organizadas</h3>
+
+                    <p>
+                        Accede a los registros de ventas y movimientos
+                        financieros mediante tablas y filtros para encontrar
+                        la información que necesitas.
+                    </p>
+                </article>
+
+                <article class="about-feature-card">
+                    <div class="feature-icon feature-blue">03</div>
+
+                    <h3>Análisis visual</h3>
+
+                    <p>
+                        Comprende el comportamiento de los ingresos, gastos
+                        y ventas mediante gráficos e indicadores financieros.
+                    </p>
+                </article>
+
+                <article class="about-feature-card">
+                    <div class="feature-icon feature-orange">04</div>
+
+                    <h3>Informes y recomendaciones</h3>
+
+                    <p>
+                        Consulta informes financieros y recomendaciones
+                        generadas a partir de reglas de análisis aplicadas
+                        a los datos disponibles.
+                    </p>
+                </article>
+
+                <article class="about-feature-card">
+                    <div class="feature-icon feature-pink">05</div>
+
+                    <h3>Gestión de negocios</h3>
+
+                    <p>
+                        Organiza la información de los negocios asociados
+                        a la cuenta y accede a las herramientas disponibles
+                        según los permisos asignados.
+                    </p>
+                </article>
+
+                <article class="about-feature-card">
+                    <div class="feature-icon feature-teal">06</div>
+
+                    <h3>Control de importaciones</h3>
+
+                    <p>
+                        Consulta el historial de importaciones para mantener
+                        un registro de los archivos procesados y de la
+                        información relacionada con cada operación.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Enfoque y alcance -->
+        <section class="about-approach">
+            <div class="about-approach-content">
+                <span class="eyebrow">NUESTRO ENFOQUE</span>
+
+                <h2>Una herramienta de análisis, no un sistema contable</h2>
+
+                <p>
+                    Finanzen se centra en facilitar la consulta, el análisis
+                    y la visualización de información financiera. Su objetivo
+                    es ayudar a propietarios y colaboradores a comprender
+                    mejor los datos registrados y contar con información
+                    útil para apoyar sus decisiones.
+                </p>
+
+                <p>
+                    La aplicación no pretende sustituir un sistema contable
+                    especializado ni realizar por sí sola todos los procesos
+                    contables, tributarios o fiscales de un negocio.
+                </p>
+            </div>
+
+            <aside class="about-approach-note">
+                <span class="approach-note-icon" aria-hidden="true">i</span>
+
+                <h3>Información para decidir mejor</h3>
+
+                <p>
+                    Los gráficos, indicadores y recomendaciones sirven
+                    como apoyo para interpretar los datos. Las decisiones
+                    finales dependen del contexto y de las necesidades
+                    de cada negocio.
+                </p>
+            </aside>
+        </section>
+
+        <!-- Privacidad y almacenamiento -->
+        <section class="about-storage">
+            <div class="storage-icon" aria-hidden="true">
+                <span>✓</span>
+            </div>
+
+            <div>
+                <span class="eyebrow">GESTIÓN DE LA INFORMACIÓN</span>
+
+                <h2>Organización y trazabilidad de los datos</h2>
+
+                <p>
+                    Finanzen utiliza una base de datos para gestionar la
+                    información de los usuarios, los negocios y los registros
+                    financieros. Además, mantiene información sobre las
+                    importaciones para facilitar su seguimiento.
+                </p>
+
+                <p>
+                    El tratamiento y la ubicación de los datos dependen
+                    de la configuración de la instalación y de la base
+                    de datos utilizada. Por ello, es importante aplicar
+                    las medidas de seguridad y respaldo correspondientes
+                    al entorno en el que se utiliza la aplicación.
+                </p>
+            </div>
+        </section>
+
+        <!-- Cierre -->
+        <section class="about-cta">
+            <span class="eyebrow">COMIENZA A EXPLORAR</span>
+
+            <h2>Conoce las herramientas de Finanzen</h2>
+
+            <p>
+                Descubre cómo preparar tus datos y comenzar a trabajar
+                con la información financiera de tu negocio.
+            </p>
+
+            <div class="about-cta-actions">
+                <a href="index.html" class="about-cta-primary">
+                    Explorar la guía de inicio
+                    <span aria-hidden="true">→</span>
+                </a>
+
+                <a href="excelTemplate.html" class="about-cta-secondary">
+                    Ver plantillas Excel
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="about-footer">
+        <a href="index.html" class="logo">Finanzen</a>
+
+        <p>
+            Información financiera organizada para comprender mejor tu negocio.
+        </p>
+    </footer>
 
 </body>
 </html>

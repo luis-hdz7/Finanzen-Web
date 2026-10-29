@@ -5,27 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guía de Inicio Rápido - Finanzen</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/inicio.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Inicio</a></li>
-      <li><a href="excelTemplate.html">Plantillas Excel</a></li>
-      <li><a href="aboutUs.html">Acerca de</a></li>
-    </ul>
-  </nav>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Finanzen</a>
 
-  <main class="container">
-    <h1>Guía de Inicio Rápido</h1>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li>
+                <a href="excelTemplate.html" >
+                    Plantillas Excel
+                </a>
+            </li>
+            <li><a href="aboutUs.html">Acerca de</a></li>
+        </ul>
+    </nav>
 
-    <p>
-      Bienvenido a la documentación oficial de <strong>Finanzen</strong>.
-      Finanzen es una aplicación de escritorio diseñada para ayudar a pequeñas
-      y medianas empresas a organizar, analizar y visualizar su información
-      financiera de manera sencilla.
-    </p>
 
+<main class="container inicio-page">
+
+    <!-- Presentación -->
+    <header class="inicio-hero">
+        <span class="eyebrow">GUÍA DE INICIO · FINANZEN</span>
+
+        <h1>
+            Conoce Finanzen.
+            <span>Aprende a gestionar tu información financiera.</span>
+        </h1>
+
+        <p>
+            Bienvenido a la documentación oficial de
+            <strong>Finanzen</strong>.
+            Finanzen es una aplicación de escritorio diseñada para
+            ayudar a pequeñas y medianas empresas a organizar,
+            analizar y visualizar su información financiera
+            de manera sencilla.
+        </p>
+    </header>
+
+    <!-- Video de presentación -->
+    <section class="inicio-video" aria-labelledby="video-title">
+
+        <div class="video-heading">
+            <span class="eyebrow">DESCUBRE CÓMO FUNCIONA</span>
+
+            <h2 id="video-title">
+                Tu primer recorrido por Finanzen
+            </h2>
+
+            <p>
+                Conoce las principales funciones de la aplicación
+                y descubre cómo comenzar a trabajar con la
+                información financiera de tu negocio.
+            </p>
+        </div>
+
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                title="Video de introducción a Finanzen"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="video-footer">
+            <span class="video-indicator"></span>
+            <p>
+                Video introductorio · Conoce la aplicación paso a paso
+            </p>
+        </div>
+
+    </section>
     <section>
       <h2>1. Crear una cuenta</h2>
       <p>
@@ -95,6 +151,5 @@
       </p>
     </section>
   </main>
-
 </body>
 </html>
